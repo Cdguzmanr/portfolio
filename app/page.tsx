@@ -37,9 +37,9 @@ export default function Home() {
 <Skills/>
 </>
 
-<>
+{/* <>
   < ProjectsSection />
-</>
+</> */}
 
 {/* <>
   <Extra />
