@@ -1,0 +1,2 @@
+shortcut to create new react .tsx file: rafce + tab
+import react icons: npm i react-icons
