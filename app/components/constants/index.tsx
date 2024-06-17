@@ -13,9 +13,9 @@ import { GlobeLock } from "lucide-react";
 // import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-    {label: "About", href: "videoBanne"},
-    {label: "Projects", href: "videoBanne"},
-    {label: "Contact", href: "videoBanne"},
+    {label: "About", href: "#"},
+    {label: "Projects", href: "#"},
+    {label: "Contact", href: "#"},
 ];
 
 // export const testimonials = [
@@ -153,25 +153,25 @@ export const pricingOptions = [
 ];
 
 export const resourcesLinks = [
-  { href: "videoBanne", text: "Getting Started" },
-  { href: "videoBanne", text: "Documentation" },
-  { href: "videoBanne", text: "Tutorials" },
-  { href: "videoBanne", text: "API Reference" },
-  { href: "videoBanne", text: "Community Forums" },
+  { href: "#", text: "Getting Started" },
+  { href: "#", text: "Documentation" },
+  { href: "#", text: "Tutorials" },
+  { href: "#", text: "API Reference" },
+  { href: "#", text: "Community Forums" },
 ];
 
 export const platformLinks = [
-  { href: "videoBanne", text: "Features" },
-  { href: "videoBanne", text: "Supported Devices" },
-  { href: "videoBanne", text: "System Requirements" },
-  { href: "videoBanne", text: "Downloads" },
-  { href: "videoBanne", text: "Release Notes" },
+  { href: "#", text: "Features" },
+  { href: "#", text: "Supported Devices" },
+  { href: "#", text: "System Requirements" },
+  { href: "#", text: "Downloads" },
+  { href: "#", text: "Release Notes" },
 ];
 
 export const communityLinks = [
-  { href: "videoBanne", text: "Events" },
-  { href: "videoBanne", text: "Meetups" },
-  { href: "videoBanne", text: "Conferences" },
-  { href: "videoBanne", text: "Hackathons" },
-  { href: "videoBanne", text: "Jobs" },
+  { href: "#", text: "Events" },
+  { href: "#", text: "Meetups" },
+  { href: "#", text: "Conferences" },
+  { href: "#", text: "Hackathons" },
+  { href: "#", text: "Jobs" },
 ];

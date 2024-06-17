@@ -10,8 +10,14 @@ import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 
 import { AppProps } from 'next/app';
-import { BrowserRouter } from 'react-router-dom';
 
+
+import dynamic from 'next/dynamic';
+
+const BrowserRouter = dynamic(
+  () => import('react-router-dom').then(mod => mod.BrowserRouter),
+  { ssr: false }
+);
 
 
 export default function Home() {
@@ -19,39 +25,39 @@ export default function Home() {
     <BrowserRouter>
       <main className="bg-neutral-50 min-h-screen">
 
-<>
-  <Navbar />
-</>
+      <>
+        <Navbar />
+      </>
 
-<>
-  <MainBanner />
-</>
+      <>
+        <MainBanner />
+      </>
 
-<div className="clear-both"></div>
+      <div className="clear-both"></div>
 
-<>
-  <Profile />
-</>
+      <>
+        <Profile />
+      </>
 
-<>
-<Skills/>
-</>
+      <>
+      <Skills/>
+      </>
 
-{/* <>
-  < ProjectsSection />
-</> */}
+      <>
+        < ProjectsSection />
+      </>
 
-{/* <>
-  <Extra />
-</> */}
+      {/* <>
+        <Extra />
+      </> */}
 
-  
+        
 
-<>
-  <Footer />
-</>
+      <>
+        <Footer />
+      </>
 
-</main>
+      </main>
 
     </BrowserRouter>
     

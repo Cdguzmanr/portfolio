@@ -3,15 +3,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "next build && next export && gh-pages -d out",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",

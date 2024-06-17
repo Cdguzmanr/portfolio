@@ -12,18 +12,20 @@ const Skills = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fadeInLeft');
-        } else {
-          entry.target.classList.remove('animate-fadeInLeft');
+    if (typeof window !== 'undefined') {  
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeInLeft');
+          } else {
+            entry.target.classList.remove('animate-fadeInLeft');
+          }
+        },
+        {
+          threshold: 0.1,
         }
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+      );
+      
 
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
@@ -34,6 +36,8 @@ const Skills = () => {
         observer.unobserve(sectionRef.current);
       }
     };
+  }
+  
   }, []);
 
   const skills = [
