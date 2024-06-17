@@ -1,7 +1,9 @@
 {
+  "homepage": "http://Cdguzmanr.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -23,6 +25,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
